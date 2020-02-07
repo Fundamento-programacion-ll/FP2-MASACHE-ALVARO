@@ -10,12 +10,26 @@ package comparadores;
  * @author HP Probook 440 G3
  */
 public class Comparadores {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+     public static void main(String[] args) {
+          String salida = "";
+        paises p = new paises();
+        
+        p.setListaprovincias();
+        salida += "Lista Provincias: \n"+p.toString();
+        System.out.println(salida);
+        
+        
+        p.ordenarp();
+        salida += "Lista Provincias: \n"+p.toString();
+        System.out.println(salida);
+        
+        p.ordenarnum();
+        salida += "Lista Habitantes: \n"+p.toString();
+        System.out.println(salida);
+    }
     }
     
-}
+   
+    
+    
+

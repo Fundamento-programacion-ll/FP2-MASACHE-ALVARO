@@ -33,7 +33,8 @@ public class provincias {
     }
 
     public provincias() {
-        String datos = JOptionPane.showInputDialog(null,"Ingrese los valores");
+        String datos ;
+                datos= JOptionPane.showInputDialog(null,"Ingrese los datos separados por punto y coma");
         StringTokenizer tokens = new StringTokenizer(datos,",");
         this.nombre=tokens.nextToken();
         this.num_hab=Integer.parseInt(tokens.nextToken());
@@ -43,6 +44,11 @@ public class provincias {
         this.nombre = nombre;
         this.num_hab = num_hab;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "Nombre: "+ getNombre()+ " habitantes: "+getNum_hab();
+    }
 }
+    
+    
