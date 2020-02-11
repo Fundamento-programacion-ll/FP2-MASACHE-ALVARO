@@ -12,7 +12,7 @@ import java.util.Comparator;
  * @author HP Probook 440 G3
  */
 public class comparador implements Comparator{
- int comparadornom;
+  int comparadornom;
     provincias provincias1, provincia2;
     
     @Override
